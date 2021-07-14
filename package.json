@@ -1,0 +1,23 @@
+{
+  "name": "electronstreaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7ingyu/ElectronStreaming.git"
+  },
+  "author": "Ting-Yu Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7ingyu/ElectronStreaming/issues"
+  },
+  "homepage": "https://github.com/7ingyu/ElectronStreaming#readme",
+  "devDependencies": {
+    "electron": "^13.1.6"
+  }
+}
