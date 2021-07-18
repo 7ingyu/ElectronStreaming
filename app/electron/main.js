@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 const path = require('path');
 
-let mainWindow
+let mainWindow;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
@@ -10,9 +10,9 @@ const createWindow = () => {
     height: 600,
     show: false
   });
-  const startUrl = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`
+  const startURL = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`
 
-  mainWindow.loadUrl(startUrl);
+  mainWindow.loadURL(startURL);
 
   mainWindow.once('ready-to-show', () => mainWindow.show());
   mainWindow.on('closed', () => {
